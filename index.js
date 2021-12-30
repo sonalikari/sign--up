@@ -52,4 +52,4 @@ app.get("/",(req,res)=>{
     return res.redirect('index.html');
 }).listen(3000);
 
-console.log("Listening to the server on http://localhost:3000");
+app.set('port', process.env.PORT || 3000);
