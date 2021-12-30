@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SignUp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="signupFrm">
+      <div class="form">
+        <form action="/sign_up" method="POST">
+          <h1 class="title">Welcome</h1>
+          <h3>Let's create your account</h3>
+    
+          <div class="inputContainer">
+            <input type="text" class="input" id="name" name="name" placeholder="a" required />
+            <label for="" class="label">Name</label>
+          </div>
+    
+          <div class="inputContainer">
+            <input type="email" class="input" id="email" name="email" placeholder="a" required />
+            <label for="" class="label">Email</label>
+          </div>
+    
+          <div class="inputContainer">
+            <input type="text" class="input" id="phno" name="phno"  placeholder="a" pattern="[6-9]{1}[0-9]{9}" required />
+            <label for="" class="label">Phone</label>
+          </div>
+
+          <div class="inputContainer">
+            <input type="password" class="input" id="password" name="password" placeholder="a" minlength="8" required />
+            <label for="" class="label">Password</label>
+          </div>
+    
+          <div class="inputContainer">
+            <input type="password" class="input" id="confirm_password" placeholder="a" required />
+            <label for="" class="label">Confirm Password</label>
+          </div>
+    
+          <input type="submit" class="submitBtn" value="Sign Up" id="submit" />
+        </form>
+      </div>
+      <script src="script.js"></script> 
+</body>
+</html>
