@@ -4,14 +4,14 @@ body{
   margin: 0;
   padding: 0;
   font-family: "lato", sans-serif;
-  background: #d3d3ff;
+  background: rgb(211, 211, 255);
 }
 .signupFrm {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #d3d3ff;
+    background: rgb(211, 211, 255);
 }
 .form {
     background-color: #fff;
