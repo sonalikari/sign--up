@@ -1,14 +1,12 @@
 import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-*{
-  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr1ASc33v4BYZK9Y5FJpgx_WdNeF1_phHs-j3T-Nrn9kvRqdo-DZ6LtzQjN_B7fFu4JKU&usqp=CAU);
-  background-size:cover; 
-  background-position:center; 
-  background-attachment: fixed;
-}
-body {
+body{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr1ASc33v4BYZK9Y5FJpgx_WdNeF1_phHs-j3T-Nrn9kvRqdo-DZ6LtzQjN_B7fFu4JKU&usqp=CAU);
+  background-size:cover; 
+  background-position:center; 
+  background-attachment: fixed;
   font-family: "lato", sans-serif;
 }
 .signupFrm {
