@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(248,63,101,1) 10%, rgba(108,198,242,1) 98%);
+  background: rgb(211, 211, 255);
   font-family: "lato", sans-serif;
 }
 .signupFrm {
@@ -14,95 +14,95 @@ body {
     height: 100vh;
 }
 .form {
-    background-color: transparent;
+    background-color: #fff;
     width: 60vw;
     border-radius: 8px;
     padding: 10px 40px;
-    box-shadow: 0 0 10px rgba(241, 241, 241, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
   
 .title {
-    font-size: 30px;
+    font-size: 2rem;
     margin-top: 10px;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: #000000;
   }
 h3{
-    font-size: 20px;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     text-align: center;
-    color: white;
+    color: grey;
 }
-  .inputContainer {
+.inputContainer {
     position: relative;
     height: 40px;
     width: 90%;
     margin-bottom: 15px;
   }
-  .input {
+.input {
     position: absolute;
     top: 0px;
     left: 0px;
     height: 100%;
     width: 100%;
-    border: 1px solid #DADCE0;
+    border: 1px solid rgb(186, 186, 255);
     border-radius: 7px;
     font-size: 16px;
     padding: 0 20px;
     outline: none;
     background: none;
     z-index: 1;
-    color: black;
+    color: #000000;
   }
   
   /* Hide the placeholder texts (a) */
   
-  ::placeholder {
+::placeholder {
     color: transparent;
   }
-  .label {
+.label {
     position: absolute;
     top: 10px;
     left: 15px;
     padding: 0 4px;
     background-color: transparent;
-    color: #DADCE0;
+    color: #d8c9c9;
     font-size: 16px;
     transition: 0.5s;
     z-index: 0;
   }
-  .submitBtn {
+.submitBtn {
     display: block;
     padding: 10px 25px;
     border: none;
-    background: radial-gradient(rgba(252,70,107,1) 0%, rgba(248,63,101,1) 20%, rgba(108,198,242,1) 110%);
-    color: whitesmoke;
-    border-radius: 6px;
+    background: rgb(0, 0, 134);
+    color: white;
+    border-radius: 20px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     margin-top: 20px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
   }
   
-  .submitBtn:hover {
-    background: rgb(255, 122, 149);
+.submitBtn:hover {
+    background: rgb(85, 85, 255);
     transform: translateY(-2px);
-    color: rgba(108,198,242,1);
+    color: whitesmoke;
   }
-  .input:focus + .label {
+.input:focus + .label {
     top: -7px;
     left: 3px;
     z-index: 10;
     font-size: 14px;
     font-weight: 600;
-    color: rgb(255, 122, 149);
+    color: rgb(139, 139, 255);
   }
-  .input:focus {
-    border: 2px solid rgba(108,198,242,1);
+.input:focus {
+    border: 2px solid rgb(186, 186, 255);
   }
-  .input:not(:placeholder-shown)+ .label {
+.input:not(:placeholder-shown)+ .label {
     top: -7px;
     left: 3px;
     z-index: 10;
@@ -110,71 +110,86 @@ h3{
     font-weight: 600;
   }
 
-  @media (min-width:900px){
+@media (min-width:900px){
     .form {
         width: 25vw;
     }
 }
 .container{
-  justify-content: center;
   align-items: center;
-  background-color: transparent;
+  height: fit-content;
+  background-color: #fff;
+  margin-top: 250px;
   width: fit-content;
-  height: 20vh;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(241, 241, 241, 0.2);
-  margin: auto;
-  margin-top: 13rem;
-  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 15px;
+  padding-bottom: 15px;
 }
 h1{
   text-align: center;
-  font-size:2.5rem;
-  color:whitesmoke;
+  font-size: 2rem;
+  color:#000000;
 }
 .btn{
-  display: inline-block;
-  padding: 0.3rem 0.5rem;
-  border-radius: .5rem;
-  background: radial-gradient(rgba(252,70,107,1) 0%, rgba(248,63,101,1) 20%, rgba(108,198,242,1) 110%);;
-  color:whitesmoke;
+  display: block;
+  border: none;
+  padding: 0.5rem 0.6rem;
+  background: rgb(0, 0, 134);
+  color: white;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   text-decoration: none;
+  max-width: fit-content;
+}
+.btn:hover{
+  background: rgb(85, 85, 255);
+  transform: translateY(-2px);
+  color: whitesmoke;
 }
 
-.btn:hover{
-  background: rgb(255, 122, 149);
-    transform: translateY(-2px);
-    color: rgba(108,198,242,1);
+@media (min-width:900px){
+  .container {
+      width: 25vw;
+  }
 }
 .games{
-  justify-content: center;
   align-items: center;
-  background-color: transparent;
+  height: fit-content;
+  background-color: #fff;
+  margin-top: 170px;
   width: fit-content;
-  height: 50vh;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(241, 241, 241, 0.2);
-  margin: auto;
-  margin-top: 10rem;
-  padding: 1rem;
-  padding-bottom: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 15px;
+  padding-bottom: 15px;
   font-size: 2rem;
+  color: #000000;
 }
 .games a {
-  display: inline-block;
+  display: block;
+  border: none;
   padding: 0.5rem 1rem;
-  border-radius: .5rem;
-  background: radial-gradient(rgba(252,70,107,1) 0%, rgba(248,63,101,1) 20%, rgba(108,198,242,1) 110%);;
-  color:whitesmoke;
+  background: rgb(0, 0, 134);
+  color: white;
+  border-radius: 20px;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   text-decoration: none;
+  max-width: fit-content;
 }
 
 .games a:hover {
-  background: rgb(255, 122, 149);
-    transform: translateY(-2px);
-    color: rgba(108,198,242,1);
+  background: rgb(85, 85, 255);
+  transform: translateY(-2px);
+  color: whitesmoke;
 }
