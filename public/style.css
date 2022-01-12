@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: rgb(211, 211, 255);
+    background: #00003B;
 }
 .form {
     background-color: #fff;
