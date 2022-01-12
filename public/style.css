@@ -3,17 +3,15 @@ body{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr1ASc33v4BYZK9Y5FJpgx_WdNeF1_phHs-j3T-Nrn9kvRqdo-DZ6LtzQjN_B7fFu4JKU&usqp=CAU);
-  background-size:cover; 
-  background-position:center; 
-  background-attachment: fixed;
   font-family: "lato", sans-serif;
+  background: #d3d3ff;
 }
 .signupFrm {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: #d3d3ff;
 }
 .form {
     background-color: #fff;
