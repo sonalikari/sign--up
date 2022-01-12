@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: rgb(211, 211, 255);
+  background-color: rgb(211, 211, 255);
   font-family: "lato", sans-serif;
 }
 .signupFrm {
